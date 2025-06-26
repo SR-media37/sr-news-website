@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Updates - SR NEWS Digital TV</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .weather-hero {
+      background-image: url('images/weather-banner.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    .weather-hero::after {
+      content: '';
+      background: rgba(0,0,0,0.5);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 1;
+    }
+    .weather-hero .content {
+      position: relative;
+      z-index: 2;
+    }
+    .section {
+      padding: 60px 20px;
+    }
+    .forecast-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .forecast-card {
+      background: #f2f2f2;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .forecast-card img {
+      height: 60px;
+      margin-bottom: 10px;
+    }
+    .tips ul {
+      max-width: 700px;
+      margin: auto;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #2c3e50;
+    }
+    .cta-button {
+      background-color: #2980b9;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="container header-container">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="SR News Logo" style="height: 40px; vertical-align: middle;">
+      <span style="margin-left: 10px; color: #f1c40f;">SR NEWS Digital TV</span>
+    </div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="advertisement.html">Advertisement</a></li>
+        <li><a href="weather.html" class="active">Weather Updates</a></li>
+        <li><a href="Health.html">Health Updates</a></li>
+        <li><a href="schedule.html">News Schedule</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Banner Section -->
+<section class="weather-hero">
+  <div class="content">
+    <h1>🌤 Live Weather Updates</h1>
+    <p>Stay informed with timely and accurate weather news for your region.</p>
+  </div>
+</section>
+
+<!-- Live Update Section -->
+<section class="section container">
+  <h2 style="text-align:center;">📍 Current Weather Conditions</h2>
+  <div style="text-align:center; margin-top: 20px;">
+    <img src="images/current-weather.png" alt="Current Weather" style="height: 80px;">
+    <p style="font-size: 18px; margin-top: 10px;">Hyderabad | 32°C | ☀ Sunny | Humidity: 45% | Wind: 10 km/h</p>
+  </div>
+</section>
+
+<!-- Forecast Section -->
+<section class="section container" style="background-color: #fdfdfd;">
+  <h2 style="text-align:center;">🔮 3-Day Forecast</h2>
+  <div class="forecast-grid" style="margin-top: 30px;">
+    <div class="forecast-card">
+      <img src="images/sunny.png" alt="Sunny">
+      <h3>Tuesday</h3>
+      <p>Max: 34°C<br>Min: 24°C<br>☀ Sunny</p>
+    </div>
+    <div class="forecast-card">
+      <img src="images/cloudy.png" alt="Cloudy">
+      <h3>Wednesday</h3>
+      <p>Max: 31°C<br>Min: 22°C<br>⛅ Cloudy</p>
+    </div>
+    <div class="forecast-card">
+      <img src="images/rainy.png" alt="Rainy">
+      <h3>Thursday</h3>
+      <p>Max: 28°C<br>Min: 21°C<br>🌧 Rain Showers</p>
+    </div>
+  </div>
+</section>
+
+<!-- Weather Safety Tips -->
+<section class="section container tips" style="background-color: #eafaf1;">
+  <h2 style="text-align:center;">💡 Weather Safety Tips</h2>
+  <ul>
+    <li>🌞 Stay hydrated during hot weather conditions.</li>
+    <li>🌧 Always carry an umbrella in monsoon season.</li>
+    <li>⚠ Avoid open areas during lightning storms.</li>
+    <li>🧥 Dress appropriately based on forecasted temperature.</li>
+    <li>📱 Follow SR NEWS for real-time weather alerts.</li>
+  </ul>
+</section>
+
+<!-- CTA -->
+<section class="section container" style="text-align: center;">
+  <h2>📲 Stay Notified with SR NEWS Weather</h2>
+  <p>Join our WhatsApp broadcast to receive local weather alerts instantly.</p>
+  <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="cta-button">Join Now</a>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>&copy; 2025 SR NEWS Digital TV. All rights reserved. Designed by Pavani Malyala.</p>
+  </div>
+</footer>
+
+</body>
+</html>
